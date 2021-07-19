@@ -81,7 +81,7 @@ end
 --------------------------------------------------------
 -- Globals
 --------------------------------------------------------
-local targInfo = texts.new(default_settings.display, default_settings)
+local targInfo = texts.new(defaultSettings.display, defaultSettings)
 targInfo:pos(200, 200)
 
 --------------------------------------------------------
