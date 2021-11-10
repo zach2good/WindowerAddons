@@ -41,13 +41,13 @@ hud:pos(400, 100)
 function display()
     -- Build string
     local hud_string = "Attack Delay\n"
-    hud_string = hud_string .. "==============================\n"
+    hud_string = hud_string .. "=============================="
     for idx, entry in pairs(attack_lookup) do
         local id = idx
         local name = entry["name"]
         local time = entry["average_time"]
         local num_samples = #entry["times"]
-        hud_string = hud_string .. string.format("%s(%d): time = %.3fs / delay = %d (n = %d)", name, id, time, time * 60, num_samples)
+        hud_string = hud_string .. string.format("\n%s(%d): time = %.3fs / delay = %d (n = %d)", name, id, time, time * 60, num_samples)
     end
 
     -- Show string
